@@ -28,7 +28,7 @@ Please, follow the data preparation described on the CADDM GitHub reporsitory: h
 
 Including the frame extraction from FF++ videos.
 
-The structure of the ```code ./data ``` folder will be:
+The structure of the ```./data ``` folder will be:
 
 ```code
 .
@@ -54,8 +54,32 @@ The structure of the ```code ./data ``` folder will be:
         │		...
 ```
 
-The structure of the ./data. folder will be:
+The structure of the ```.\test_images_single_attack_X``` folder, where X=[1,2,3,4,5] is the attack type, will be:
 
+```code
+.
+└── test_images_single_attack_X
+    ├── original_sequences
+    │   └── youtube
+    │       └── raw
+    │           └── frames
+    │               └── YYY
+    │               └── ZZZ
+    ├── manipulated_sequences
+    │   ├── Deepfakes
+    │       └── raw
+    │           └── frames
+    │               └── YYY
+    │               └── ZZZ
+    │   ├── Face2Face
+    │		...
+    │   ├── FaceSwap
+    │		...
+    │   ├── NeuralTextures
+    │		...
+    │   ├── FaceShifter
+    │		...
+```
 
 ## References
 <span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
