@@ -26,7 +26,7 @@ FDD systems:
 The implementations of both CADDM and SBIs used in this work support the use of different backbone architectures. For our experiments, both methods use EfficientNet convolutional neural networks, the only difference being that we use efficientnet-B3 for CADDM, but efficientnet-B4 for SBIs. Models pre-trained using the FF++ training dataset are used for both methods and are available on the respective GitHub repositories.
 
 ## Data Preparation
-Please, follow the data preparation described on the CADDM GitHub reporsitory: https://github.com/megvii-research/CADDM?tab=readme-ov-file#data-preparation
+Please, follow the data preparation described on the CADDM GitHub [reporsitory](https://github.com/megvii-research/CADDM?tab=readme-ov-file#data-preparation)
 
 Including the frame extraction from FF++ videos, and the download of the face landmark detector to be put it in the folder ```./lib```.
 
@@ -85,8 +85,8 @@ As one 2D-Malafide filter is created for each attack, the frames are separated i
 
 ## Pretrained models
 Make sure to download the pretrained models for CADDM and SBI, from their respective GitHub repositories.
-- CADDM: save the pretrained models in ```./CADDM/checkpoints```. You can find them here https://github.com/megvii-research/CADDM
-- SBI: save the pretrained models in ```./SBI/src/weights```. You can find them here https://github.com/mapooon/SelfBlendedImages/tree/master
+- CADDM: save the pretrained models in ```./CADDM/checkpoints```. You can find them [here](https://github.com/megvii-research/CADDM)
+- SBI: save the pretrained models in ```./SBI/src/weights```. You can find them [here](https://github.com/mapooon/SelfBlendedImages/tree/master)
 
 ## Train Malafide
 The training of 2D-Malafide is done at inference time of the deepfake detection to be attacked. The respective scripts for CADDM and SBI inference were modified accordingly.
