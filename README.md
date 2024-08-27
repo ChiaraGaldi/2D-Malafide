@@ -122,6 +122,7 @@ Application of 2D-Malafide on sample images from the FF++ dataset. 2D-Malafide i
 ![2D-Malafide results CADDM](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/examples3.png)
 
 Results in terms of equal erro rate (EER):
+![2D-Malafide results eer](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2dmalafide_results.png)
 
 
 ## References
