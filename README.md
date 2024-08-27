@@ -18,16 +18,10 @@ The implementation of 2D-Malafide is based on a previous work:
 ## 2d-Malafide application for CADDM and SBI
 To determine the effectiveness of the adversarial filter attack we used the following two
 FDD systems:
-- CADDM [[4]](#caddm) is a deepfake detection system developed to address the problem of Im-
-plicit Identity Leakage.
-- Self-Blended Images (SBIs) [[5]](#sbi) is a deepfake detection system which leverages
-training data augmentation to improve generalisability.
+- CADDM [[4]](#caddm) is a deepfake detection system developed to address the problem of Implicit Identity Leakage.
+- Self-Blended Images (SBIs) [[5]](#sbi) is a deepfake detection system which leverages training data augmentation to improve generalisability.
 
-The implementations of both CADDM and SBIs used in this work support the use of differ-
-ent backbone architectures. For our experiments, both methods use EfficientNet convolu-
-tional neural networks, the only difference being that we use efficientnet-B3 for CADDM,
-but efficientnet-B4 for SBIs. Models pre-trained using the FF++ training dataset are used
-for both methods and are available on the respective GitHub repositories.
+The implementations of both CADDM and SBIs used in this work support the use of different backbone architectures. For our experiments, both methods use EfficientNet convolutional neural networks, the only difference being that we use efficientnet-B3 for CADDM, but efficientnet-B4 for SBIs. Models pre-trained using the FF++ training dataset are used for both methods and are available on the respective GitHub repositories.
 
 ## Data Preparation
 Please, follow the data preparation described on the CADDM GitHub reporsitory: https://github.com/megvii-research/CADDM?tab=readme-ov-file#data-preparation
