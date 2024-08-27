@@ -1,6 +1,6 @@
 # 2D-Malafide
 
-![2D-malafide pipeline]()
+![2D-malafide pipeline](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2D-malafide-pipeline.png?raw=true)
 
 2D-Malafide is a novel and lightweight adversarial attack designed to deceive face deepfake detection systems. Building upon the concept of 1D convolutional perturbations explored in the speech domain, our method leverages 2D convolutional filters to craft perturbations which significantly degrade the performance of state-of-the-art face deepfake detectors. Unlike traditional additive noise approaches, 2D-Malafide optimises a small number of filter coefficients to generate robust adversarial perturbations which are transferable across different face images.
 
