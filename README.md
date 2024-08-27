@@ -82,12 +82,24 @@ As one 2D-Malafide filter is created for each attack, the frames are separated i
 ```
 
 ## Train Malafide
-The training of 2D-Malafide is done at inference time of the deepfake detection to be attacked. 
+The training of 2D-Malafide is done at inference time of the deepfake detection to be attacked. The respective scripts for CADDM and SBI inference were modified accordingly.
 
 - For CADDM, run the script ```test_w_malafide.py``` from ```./CADDM/test_w_malafide.py```:
+
 ```bash
 python test_w_malafide.py --cfg ./configs/caddm_test_malafide_attack_1_fs_3.cfg
 ```
+- For SBI, there are two options, one is for inference using single frames, the second is for inference using videos.
+
+For option 1, run the script
+
+
+For option 2, run the script ```inference_dataset_malafide.py ``` from ```./SelfBlendedImages/src/inference/inference_dataset_malafide.py```
+
+```bash
+python ./src/inference/inference_dataset_malafide.py -w src/weights/FFraw.tar -d FF -f 3 -a Deepfakes -m /medias/db/ImagingSecurity_misc/galdi/Mastro/CADDM/CADDM_efficientnet-b3_ep100_bs32/ -n 1
+```
+
 
 ## References
 <span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
