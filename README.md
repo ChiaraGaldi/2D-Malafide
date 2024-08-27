@@ -28,6 +28,8 @@ Please, follow the data preparation described on the CADDM GitHub reporsitory: h
 
 Including the frame extraction from FF++ videos.
 
+The structure of the ```code ./data ``` folder will be:
+
 ```code
 .
 └── data
@@ -51,6 +53,9 @@ Including the frame extraction from FF++ videos.
         │   ├── FaceShifter
         │		...
 ```
+
+The structure of the ./data. folder will be:
+
 
 ## References
 <span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
