@@ -116,6 +116,9 @@ Several other scripts are provided for testing, black-box testing, saving images
 
 -```test_w_malafide_gradcam.py``` - perform and save explainability heatmaps.
 
+## Results
+![2D-Malafide results CADDM]()
+
 ## References
 <span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
 
