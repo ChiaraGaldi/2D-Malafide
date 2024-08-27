@@ -105,7 +105,7 @@ python ./src/inference/inference_dataset_malafide.py -w src/weights/FFraw.tar -d
 
 Configuration files are provided in folder ```configs```.
 
-## Validation, explainability and other useful scripts
+## Testing, explainability and other useful scripts
 Several other scripts are provided for testing, black-box testing, saving images with applied attacks, explainability. To run most scripts you can use the same configuration files used for training (they contain the information for testing as well).
 
 -```test_w_malafide_validation_only.py``` - testing for white-box settings;
@@ -117,7 +117,12 @@ Several other scripts are provided for testing, black-box testing, saving images
 -```test_w_malafide_gradcam.py``` - perform and save explainability heatmaps.
 
 ## Results
+
+Application of 2D-Malafide on sample images from the FF++ dataset. 2D-Malafide is trained for attacking CADDM deepfake detector:
 ![2D-Malafide results CADDM](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/examples3.png)
+
+Results in terms of equal erro rate (EER):
+
 
 ## References
 <span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
