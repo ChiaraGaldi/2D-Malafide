@@ -125,7 +125,7 @@ Results in terms of equal erro rate (EER):
 ![2D-Malafide results eer](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2dmalafide_results.png)
 
 Explainability using GradCAM:
-![2D-Malafide results eer](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2dmalafide_results.png)
+![2D-Malafide explainability](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2d-malafide-explainability.png)
 
 
 ## References
