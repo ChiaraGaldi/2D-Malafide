@@ -100,7 +100,7 @@ python ./test_w_malafide.py --cfg ./configs/sbi_test_malafide_attack_1_fs_3.cfg
 For option 2, run the script ```inference_dataset_malafide.py ``` from ```./SBI/src/inference/```
 
 ```bash
-python ./src/inference/inference_dataset_malafide.py -w src/weights/FFraw.tar -d FF -f 3 -a Deepfakes -m path_to_training_results/SBI_efficientnet-b3_ep100_bs32/ -n 32
+python ./src/inference/inference_dataset_malafide.py -w src/weights/FFraw.tar -d FF -f 3 -a Deepfakes -m path_to_training_results/SBI_efficientnet-b4_ep100_bs32/ -n 32
 ```
 
 Configuration files are provided in folder ```configs```.
