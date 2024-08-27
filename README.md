@@ -91,8 +91,11 @@ python test_w_malafide.py --cfg ./configs/caddm_test_malafide_attack_1_fs_3.cfg
 ```
 - For SBI, there are two options, one is for inference using single frames, the second is for inference using videos.
 
-For option 1, run the script
+For option 1, run the script ```test_w_malafide.py``` from ```./SelfBlendedImages/src/test_w_malafide.py```
 
+```bash
+python ./test_w_malafide.py --cfg ./configs/sbi_test_malafide_attack_1_fs_3.cfg
+```
 
 For option 2, run the script ```inference_dataset_malafide.py ``` from ```./SelfBlendedImages/src/inference/inference_dataset_malafide.py```
 
@@ -100,6 +103,7 @@ For option 2, run the script ```inference_dataset_malafide.py ``` from ```./Self
 python ./src/inference/inference_dataset_malafide.py -w src/weights/FFraw.tar -d FF -f 3 -a Deepfakes -m /medias/db/ImagingSecurity_misc/galdi/Mastro/CADDM/CADDM_efficientnet-b3_ep100_bs32/ -n 1
 ```
 
+Configuration files are provided in folder ```configs```.
 
 ## References
 <span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
