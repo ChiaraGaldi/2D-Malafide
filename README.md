@@ -26,7 +26,7 @@ for both methods and are available on the respective GitHub repositories.
 ## Data Preparation
 Please, follow the data preparation described on the CADDM GitHub reporsitory: https://github.com/megvii-research/CADDM?tab=readme-ov-file#data-preparation
 
-Including the frame extraction from FF++ videos.
+Including the frame extraction from FF++ videos, and the download of the face landmark detector to be put it in the folder ```./lib```.
 
 The structure of the ```./data ``` folder will be:
 
