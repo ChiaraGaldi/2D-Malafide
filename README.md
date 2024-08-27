@@ -116,6 +116,16 @@ Several other scripts are provided for testing, black-box testing, saving images
 
 -```test_w_malafide_gradcam.py``` - perform and save explainability heatmaps.
 
+## Citation
+If you use 2D-Malafide, please cite:
+@inproceedings{2Dmalafide2024,
+	author = {Chiara Galdi and Michele Panariello and Massimiliano Todisco and Nicholas Evans},
+	title = {2D-Malafide: Adversarial Attacks Against Face Deepfake Detection Systems},
+	booktitle= {International Conference of the Biometrics Special Interest Group (BIOSIG)},
+	year = {2024}
+}
+
+
 ## Results
 ![2D-Malafide results CADDM](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/examples3.png)
 
