@@ -14,19 +14,18 @@ which illustrates how 2D-Malafide misleads detection systems by altering the ima
 
 ## Credits
 The implementation of 2D-Malafide is based on a previous work: 
-- GitHub offcial [repository](https://github.com/eurecom-asp/malafide/tree/508ae9393479472aa944283f21b696c428e32f30)
-- Published in *Malafide: a novel adversarial convolutive noise attack against deepfake and spoofing detection system* [[6]](#mala)
+- GitHub offcial [repository](https://github.com/eurecom-asp/malafide/tree/508ae9393479472aa944283f21b696c428e32f30);
+- Published in *"Malafide: a novel adversarial convolutive noise attack against deepfake and spoofing detection system"* [[6]](#mala).
 
 ## 2d-Malafide application for CADDM and SBI
-To determine the effectiveness of the adversarial filter attack we used the following two
-FDD systems:
+To determine the effectiveness of the adversarial filter attack we used the following two face deepfake detector systems:
 - CADDM [[4]](#caddm) is a deepfake detection system developed to address the problem of Implicit Identity Leakage.
 - Self-Blended Images (SBIs) [[5]](#sbi) is a deepfake detection system which leverages training data augmentation to improve generalisability.
 
 The implementations of both CADDM and SBIs used in this work support the use of different backbone architectures. For our experiments, both methods use EfficientNet convolutional neural networks, the only difference being that we use efficientnet-B3 for CADDM, but efficientnet-B4 for SBIs. Models pre-trained using the FF++ training dataset are used for both methods and are available on the respective GitHub repositories.
 
 ## Data Preparation
-Please, follow the data preparation described on the CADDM GitHub [reporsitory](https://github.com/megvii-research/CADDM?tab=readme-ov-file#data-preparation)
+Please, follow the data preparation described on the CADDM GitHub [reporsitory](https://github.com/megvii-research/CADDM?tab=readme-ov-file#data-preparation).
 
 Including the frame extraction from FF++ videos, and the download of the face landmark detector to be put it in the folder ```./lib```.
 
@@ -85,8 +84,8 @@ As one 2D-Malafide filter is created for each attack, the frames are separated i
 
 ## Pretrained models
 Make sure to download the pretrained models for CADDM and SBI, from their respective GitHub repositories.
-- CADDM: save the pretrained models in ```./CADDM/checkpoints```. You can find them [here](https://github.com/megvii-research/CADDM)
-- SBI: save the pretrained models in ```./SBI/src/weights```. You can find them [here](https://github.com/mapooon/SelfBlendedImages/tree/master)
+- CADDM: save the pretrained models in ```./CADDM/checkpoints```. You can find them [here](https://github.com/megvii-research/CADDM);
+- SBI: save the pretrained models in ```./SBI/src/weights```. You can find them [here](https://github.com/mapooon/SelfBlendedImages/tree/master).
 
 ## Train Malafide
 The training of 2D-Malafide is done at inference time of the deepfake detection to be attacked. The respective scripts for CADDM and SBI inference were modified accordingly.
