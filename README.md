@@ -5,6 +5,8 @@ Official implementation of *2D-Malafide: Adversarial Attacks Against Face Deepfa
 
 2D-Malafide is a novel and lightweight adversarial attack designed to deceive face deepfake detection systems. Building upon the concept of 1D convolutional perturbations explored in the speech domain, our method leverages 2D convolutional filters to craft perturbations which significantly degrade the performance of state-of-the-art face deepfake detectors. Unlike traditional additive noise approaches, 2D-Malafide optimises a small number of filter coefficients to generate robust adversarial perturbations which are transferable across different face images.
 
+The paper is available on [arXiv](https://arxiv.org/abs/2408.14143).
+
 Experiments are conducted using the FaceForensics++ dataset [[2]](#ff): https://github.com/ondyari/FaceForensics
 
 Additionally, we report an explainability analysis using GradCAM [[3]](#gradcam): https://github.com/jacobgil/pytorch-grad-cam
@@ -12,7 +14,7 @@ which illustrates how 2D-Malafide misleads detection systems by altering the ima
 
 ## Credits
 The implementation of 2D-Malafide is based on a previous work: 
-- GitHub offcial repository: https://github.com/eurecom-asp/malafide/tree/508ae9393479472aa944283f21b696c428e32f30
+- GitHub offcial [repository](https://github.com/eurecom-asp/malafide/tree/508ae9393479472aa944283f21b696c428e32f30)
 - Published in *Malafide: a novel adversarial convolutive noise attack against deepfake and spoofing detection system* [[6]](#mala)
 
 ## 2d-Malafide application for CADDM and SBI
