@@ -124,11 +124,14 @@ Application of 2D-Malafide on sample images from the FF++ dataset. 2D-Malafide i
 Results in terms of equal erro rate (EER):
 ![2D-Malafide results eer](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2dmalafide_results.png)
 
+Explainability using GradCAM:
+![2D-Malafide results eer](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2dmalafide_results.png)
+
 
 ## References
 <span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
 
-<span id="gradcam">[2]</span> Jacob Gildenblat and contributors, PyTorch library for CAM methods, GitHub\url{https://github.com/jacobgil/pytorch-grad-cam}, 2021
+<span id="gradcam">[2]</span> Jacob Gildenblat and contributors, PyTorch library for CAM methods, GitHub https://github.com/jacobgil/pytorch-grad-cam, 2021
 
 <span id="caddm">[3]</span> Shichao Dong, Jin Wang, Renhe Ji, Jiajun Liang, Haoqiang Fan, Zheng Ge, Implicit Identity Leakage: The Stumbling Block to Improving Deepfake Detection Generalization, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023, Pages: 3994-4004
 
