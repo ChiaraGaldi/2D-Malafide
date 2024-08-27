@@ -1,4 +1,5 @@
 # 2D-Malafide
+Official implementation of *2D-Malafide: Adversarial Attacks Against Face Deepfake Detection Systems*[[1]](#mala2)
 
 ![2D-malafide pipeline](https://github.com/eurecom-fscv/2D-Malafide/blob/main/img/2D-malafide-pipeline.png?raw=true)
 
