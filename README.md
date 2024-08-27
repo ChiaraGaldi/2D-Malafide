@@ -11,7 +11,9 @@ Additionally, we report an explainability analysis using GradCAM [[3]](#gradcam)
 which illustrates how 2D-Malafide misleads detection systems by altering the image areas used most for classification.
 
 ## Credits
-The implementation of 2D-Malafide is based on a previous work: https://github.com/eurecom-asp/malafide/tree/508ae9393479472aa944283f21b696c428e32f30
+The implementation of 2D-Malafide is based on a previous work: 
+- GitHub offcial repository: https://github.com/eurecom-asp/malafide/tree/508ae9393479472aa944283f21b696c428e32f30
+- Published in *Malafide: a novel adversarial convolutive noise attack against deepfake and spoofing detection system* [[6]](#mala)
 
 ## 2d-Malafide application for CADDM and SBI
 To determine the effectiveness of the adversarial filter attack we used the following two
@@ -139,13 +141,15 @@ Explainability using GradCAM:
 ## References
 <span id="mala2">[1]</span> Chiara Galdi, Michele Panariello, Massimiliano Todisco and Nicholas Evans, 2D-Malafide: Adversarial Attacks Against Face Deepfake Detection Systems, International Conference of the Biometrics Special Interest Group (BIOSIG), 2024
 
-<span id="ff">[1]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
+<span id="ff">[2]</span> Andreas Rossler, Davide Cozzolino,Luisa Verdoliva, Christian Riess, Justus Thies and Matthias Niessner, FaceForensics++: Learning to Detect Manipulated Facial Images, International Conference on Computer Vision (ICCV), 2019
 
-<span id="gradcam">[2]</span> Jacob Gildenblat and contributors, PyTorch library for CAM methods, GitHub https://github.com/jacobgil/pytorch-grad-cam, 2021
+<span id="gradcam">[3]</span> Jacob Gildenblat and contributors, PyTorch library for CAM methods, GitHub https://github.com/jacobgil/pytorch-grad-cam, 2021
 
-<span id="caddm">[3]</span> Shichao Dong, Jin Wang, Renhe Ji, Jiajun Liang, Haoqiang Fan, Zheng Ge, Implicit Identity Leakage: The Stumbling Block to Improving Deepfake Detection Generalization, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023, Pages: 3994-4004
+<span id="caddm">[4]</span> Shichao Dong, Jin Wang, Renhe Ji, Jiajun Liang, Haoqiang Fan, Zheng Ge, Implicit Identity Leakage: The Stumbling Block to Improving Deepfake Detection Generalization, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023, Pages: 3994-4004
 
-<span id="sbi">[4]</span> Kaede Shiohara and Toshihiko Yamasaki, Detecting Deepfakes with Self-Blended Images, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022, Pages: 18699-18708
+<span id="sbi">[5]</span> Kaede Shiohara and Toshihiko Yamasaki, Detecting Deepfakes with Self-Blended Images, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022, Pages: 18699-18708
+
+<span id="mala">[6]</span> Michele Panariello, Wanying Ge, Hemlata Tak, Massimiliano Todisco and Nicholas Evans, Malafide: a novel adversarial convolutive noise attack against deepfake and spoofing detection systems. Proc. INTERSPEECH 2023, 2868-2872, doi: 10.21437/Interspeech.2023-703, 2023
 
 ## Citation
 If you use 2D-Malafide, please cite:
