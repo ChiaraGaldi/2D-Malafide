@@ -54,7 +54,7 @@ The structure of the ```./data ``` folder will be:
         │		...
 ```
 
-The structure of the ```.\test_images_single_attack_X``` folder, where X=[1,2,3,4,5] is the attack type, will be:
+As one 2D-Malafide filter is created for each attack, the frames are separated in different folders according to the attack type. The structure of the ```.\test_images_single_attack_X``` folder, where X=[1,2,3,4,5] is the attack type, will be:
 
 ```code
 .
@@ -79,6 +79,14 @@ The structure of the ```.\test_images_single_attack_X``` folder, where X=[1,2,3,
     │		...
     │   ├── FaceShifter
     │		...
+```
+
+## Train Malafide
+The training of 2D-Malafide is done at inference time of the deepfake detection to be attacked. 
+
+- For CADDM, run the script ```test_w_malafide.py``` from ```./CADDM/test_w_malafide.py```:
+```bash
+python test_w_malafide.py --cfg ./configs/caddm_test_malafide_attack_1_fs_3.cfg
 ```
 
 ## References
