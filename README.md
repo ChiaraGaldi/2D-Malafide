@@ -84,23 +84,23 @@ As one 2D-Malafide filter is created for each attack, the frames are separated i
 ## Train Malafide
 The training of 2D-Malafide is done at inference time of the deepfake detection to be attacked. The respective scripts for CADDM and SBI inference were modified accordingly.
 
-- For CADDM, run the script ```test_w_malafide.py``` from ```./CADDM/test_w_malafide.py```:
+- For CADDM, run the script ```test_w_malafide.py``` from ```./CADDM/```:
 
 ```bash
 python test_w_malafide.py --cfg ./configs/caddm_test_malafide_attack_1_fs_3.cfg
 ```
 - For SBI, there are two options, one is for inference using single frames, the second is for inference using videos.
 
-For option 1, run the script ```test_w_malafide.py``` from ```./SelfBlendedImages/src/test_w_malafide.py```
+For option 1, run the script ```test_w_malafide.py``` from ```./SelfBlendedImages/src/```
 
 ```bash
 python ./test_w_malafide.py --cfg ./configs/sbi_test_malafide_attack_1_fs_3.cfg
 ```
 
-For option 2, run the script ```inference_dataset_malafide.py ``` from ```./SelfBlendedImages/src/inference/inference_dataset_malafide.py```
+For option 2, run the script ```inference_dataset_malafide.py ``` from ```./SelfBlendedImages/src/inference/```
 
 ```bash
-python ./src/inference/inference_dataset_malafide.py -w src/weights/FFraw.tar -d FF -f 3 -a Deepfakes -m /medias/db/ImagingSecurity_misc/galdi/Mastro/CADDM/CADDM_efficientnet-b3_ep100_bs32/ -n 1
+python ./src/inference/inference_dataset_malafide.py -w src/weights/FFraw.tar -d FF -f 3 -a Deepfakes -m /medias/db/ImagingSecurity_misc/galdi/Mastro/CADDM/CADDM_efficientnet-b3_ep100_bs32/ -n 32
 ```
 
 Configuration files are provided in folder ```configs```.
