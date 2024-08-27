@@ -9,6 +9,9 @@ Experiments are conducted using the FaceForensics++ dataset [[1]](#ff): https://
 Additionally, we report an explainability analysis using GradCAM [[2]](#gradcam): https://github.com/jacobgil/pytorch-grad-cam
 which illustrates how 2D-Malafide misleads detection systems by altering the image areas used most for classification.
 
+## Credits
+The implementation of 2D-Malafide is based on a previous work: https://github.com/eurecom-asp/malafide/tree/508ae9393479472aa944283f21b696c428e32f30
+
 ## 2d-Malafide application for CADDM and SBI
 To determine the effectiveness of the adversarial filter attack we used the following two
 FDD systems:
@@ -80,6 +83,11 @@ As one 2D-Malafide filter is created for each attack, the frames are separated i
     │   ├── FaceShifter
     │		...
 ```
+
+## Pretrained models
+Make sure to download the pretrained models for CADDM and SBI, from their respective GitHub repositories.
+- CADDM: save the pretrained models in ```./CADDM/checkpoints```. You can find them here https://github.com/megvii-research/CADDM
+- SBI: save the pretrained models in ```./SBI/src/weights```. You can find them here https://github.com/mapooon/SelfBlendedImages/tree/master
 
 ## Train Malafide
 The training of 2D-Malafide is done at inference time of the deepfake detection to be attacked. The respective scripts for CADDM and SBI inference were modified accordingly.
